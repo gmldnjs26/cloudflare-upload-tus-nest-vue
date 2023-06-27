@@ -1,7 +1,7 @@
 
 <script lang="ts" setup>
 import { Upload } from 'tus-js-client';
-const onFileChanged = async (event: Event) => {
+const onChange = async (event: Event) => {
   const target = event.target as HTMLInputElement;
   const files = target.files as FileList;
   const file = files[0];
@@ -34,5 +34,5 @@ const onFileChanged = async (event: Event) => {
 </script>
 
 <template>
-  <input type="file" @change="onFileChanged" />
+  <input type="file" @change="onChange" />
 </template>
