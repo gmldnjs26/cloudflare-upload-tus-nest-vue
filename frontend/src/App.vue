@@ -19,7 +19,7 @@ const onChange = async (event: Event) => {
       console.log(bytesUploaded, bytesTotal);
     },
     onSuccess() {
-      console.log('Upload finished:');
+      console.log('Upload finished!');
     },
   });
   upload.findPreviousUploads().then(previousUploads => {
